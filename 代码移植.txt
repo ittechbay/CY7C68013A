@@ -1,0 +1,11 @@
+1. 下载 libusb-0.1.12.tar.gz（https://sourceforge.net/projects/libusb/files/）
+2. 解压 tar xzvf libusb-0.1.12.tar.gz
+3. 配置 ./configure CC=arm-linux-gnueabihf-gcc CXX=arm-linux-gnueabihf-g++ --prefix=/work/libusb --host=arm-linux --disable-build-docs --disable-udev
+4. 编译与安装：make;make install
+5. 数据采集参考代码：read_usb.c
+6. 编译代码: arm-linux-gnueabihf-gcc -o read_usb -g  main.c -lusb -L/work/libusb/lib -I/work/libusb/include
+
+
+
+
+
