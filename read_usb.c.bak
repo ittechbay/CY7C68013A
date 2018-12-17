@@ -1,4 +1,4 @@
-// gcc -g -lusb main.c
+// gcc -o read_usb -g  read_usb1.c -lusb-1.0 -lpthread -L/work/libusb1_pc/lib/ -I/work/libusb1_pc/include/libusb-1.0/
 #include <stdio.h>
 #include <unistd.h>
 #include <libusb.h>

@@ -80,7 +80,7 @@ int main()
 	}
 	printf("start writing....\n");
 	int offset1 = 0;
-	fp = fopen("usbdata", "a+");
+	fp = fopen("usbdata.dat", "w+");
 	while(1)
 	{
 		int size = fwrite(buf+offset1, 1, BLK_SIZE, fp);
